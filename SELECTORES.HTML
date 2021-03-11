@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+
+            /* Tiene el atributo, no importa el valor*/
+            [name] {
+                background-color: cadetblue;
+            }
+            /* Atributo con el valor exacto*/
+            [for="name"] {
+                text-transform: uppercase;
+            }
+            /* Atributo con la PALABRA EN EL VALOR*/
+            [alt~="Autonoma"] {
+                height: 50px;
+            }
+            /* Atributo que el valor empiece con la palabra*/
+            [id|="parrafo"] {
+                border: solid 2px red;
+            }
+            /* Aatributo que el valor empiece con la cadena*/
+            [name^="last"] {
+                font-size: 20px;
+            }
+            /* Atributo que el valor contiene la cadena */
+            [name$="e"] {
+                margin-left: 20px;
+            }
+
+            [for*="name"] {
+                color: sienna;
+
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+     <p id="parrafo-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque possimus quis iure. Quia possimus voluptates cumque nulla soluta? Magni molestiae iste deleniti consectetur reiciendis dolores, eligendi fuga! Magni, recusandae ut?</p>   
+     
+     <br>
+
+     <p id="parrafo-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia magnam, tenetur corporis dolorum doloribus aperiam voluptates! Assumenda nulla, inventore pariatur quia possimus dignissimos harum fuga blanditiis, delectus atque nesciunt sit!</p>
+<br>
+     <p id="parrafo-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ea fuga voluptatibus vero laborum ad aspernatur incidunt maxime totam inventore odio harum, ipsam enim quaerat saepe commodi reiciendis dolor sunt?</p>
+
+     <img src="uaslp.jpg" alt="Universidad Autonoma de San Luis Potosi">
+
+     <form>
+         <label for="name">Nombre</label>
+         <input type="text" name="name">
+         <br>
+         <label for="lastnames">Apellido Paterno</label>
+         <input type="text" name="lastname1">
+         <br>
+         <label for="lastnames">Apellido Mmaterno</label>
+         <input type="text" name="lastname2">
+         <br>
+         <label for="phone">Telefono</label>
+         <input type="text" name="phone">
+
+     </form>
+
+    </body>
+    </html>
+</body>
+</html>
